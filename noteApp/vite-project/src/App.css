@@ -1,0 +1,15 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    width:100vw;
+    overflow-x:hidden;
+    background-color: rgb(26, 26, 26);
+}
+

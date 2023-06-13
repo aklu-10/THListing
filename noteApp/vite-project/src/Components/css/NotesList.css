@@ -1,0 +1,91 @@
+.notesList
+{
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.notesList .notesContainer
+{
+    padding:5px;
+    width:100%;
+    height: 92vh;
+    overflow-y: auto;
+}
+
+.notesList .notesContainer .notes
+{
+    width:100%;
+    max-height: max-content;
+    min-height:10px;
+    padding:5px;
+    color:lightgray;
+    background-color: rgb(59, 59, 59);
+    border-radius: 5px;
+    margin:5px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.notesList .notesContainer .notes:hover
+{
+    box-shadow: 0 0 2px white;
+}
+
+.notesList .notesContainer .notes p
+{
+    word-wrap: break-word;
+    width:98%;
+}
+
+.notesList .notesContainer .notes .delete
+{
+    font-size:10px;
+    background-color: rgb(59, 59, 59);
+    color:black;
+    border:none;    
+    position: absolute;
+    right:4px;
+    top:1px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.notesList .notesContainer .notesNone
+{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    color:gray;
+}
+
+.notesList .addContainer 
+{
+    position: sticky;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background-color: black;
+    height: 8vh;
+}
+
+.notesList .addContainer .add
+{
+    width:70px;
+    height: 70px;
+    position: absolute;
+    top:-50%;
+    right:2%;
+    background-color: black;
+    border:5px solid #1a1a1a;
+    border-radius: 50px;
+    padding:10px;
+    color:gray;
+    cursor: pointer;
+}
+
+
+
+

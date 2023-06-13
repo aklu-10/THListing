@@ -1,0 +1,158 @@
+.addNotesFormContainer
+{
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    background-color: rgba(20,20,20,.5);
+    backdrop-filter: blur(20px);
+}
+
+.addNotesForm
+{
+    width:90vw;
+    height:90vh;
+    border:1px solid lightgray;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border:none;
+    border-radius: 5px;
+    animation-name:popup;
+    animation-duration: .06s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    overflow: hidden;
+}
+
+@keyframes popup
+{
+    from
+    {
+        width:0;
+        height:0;
+    }
+
+    to
+    {
+        width:90vw;
+        height:90vh;
+    }
+}
+
+@keyframes popupClose
+{
+    from
+    {
+        width:initial;
+        height:initial;
+    }
+
+    to
+    {
+        width:0;
+        height:0;
+    }
+}
+
+.addNotesForm input,
+.addNotesForm textarea
+{
+    padding:15px;
+    font-size:1.2rem;
+    border:none;
+    background-color: rgb(26, 26, 26);
+    color:gray;
+}
+
+.addNotesForm input
+{
+    
+    height: 10%;
+}
+
+.addNotesForm textarea
+{
+    height: 80%;
+    resize:none;
+    overflow-x: hidden;
+}
+
+.addNotesForm input:focus,
+.addNotesForm textarea:focus
+{
+    outline:none;
+}
+
+.addNotesForm textarea::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+.addNotesForm textarea::-webkit-scrollbar-thumb
+{
+    background-color: gray;
+}
+
+.addNotesForm p
+{
+    height: 5%;
+    font-size:1.1rem;
+    color:gray;
+    text-align:center;
+    font-weight:100;
+    padding:10px 0;
+}
+
+.addNotesForm .btnGroup
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5%;
+}
+
+.addNotesForm .btnGroup button
+{
+    padding:8px 20px;
+    background-color: gray;
+    color:white;
+    border-radius: 5px;
+    margin:5px;
+    box-shadow:2px 2px lightgray;
+    border:none;
+    cursor: pointer;
+}
+
+.addNotesForm .btnGroup button:hover
+{
+    box-shadow:2px -2px lightgray;
+}
+
+.addNotesForm .pin,
+.addNotesForm .delete
+{
+    position: absolute;
+    top:10px;
+    right:5%;
+    background-color: rgb(26, 26, 26);
+    border:none;
+    color:gray;
+    cursor: pointer;
+}
+
+.addNotesForm .pin
+{
+
+}
+
+.addNotesForm .delete
+{
+    top:10px;
+    right:1%;
+}
